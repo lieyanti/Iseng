@@ -10,20 +10,22 @@
 		8898A523211AD13D0011F68F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898A522211AD13D0011F68F /* AppDelegate.swift */; };
 		8898A525211AD13D0011F68F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898A524211AD13D0011F68F /* ViewController.swift */; };
 		8898A528211AD13D0011F68F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8898A526211AD13D0011F68F /* Main.storyboard */; };
-		8898A52B211AD13D0011F68F /* DependencyManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8898A529211AD13D0011F68F /* DependencyManager.xcdatamodeld */; };
 		8898A52D211AD13D0011F68F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8898A52C211AD13D0011F68F /* Assets.xcassets */; };
 		8898A530211AD13D0011F68F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8898A52E211AD13D0011F68F /* LaunchScreen.storyboard */; };
+		CF1DA9D054AEF43CF7D00247 /* Pods_DependencyManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B15767D426353830F23EB12 /* Pods_DependencyManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B15767D426353830F23EB12 /* Pods_DependencyManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DependencyManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		457366C09C2BDC0894CA911D /* Pods-DependencyManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DependencyManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DependencyManager/Pods-DependencyManager.debug.xcconfig"; sourceTree = "<group>"; };
 		8898A51F211AD13D0011F68F /* DependencyManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DependencyManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8898A522211AD13D0011F68F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8898A524211AD13D0011F68F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8898A527211AD13D0011F68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8898A52A211AD13D0011F68F /* DependencyManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DependencyManager.xcdatamodel; sourceTree = "<group>"; };
 		8898A52C211AD13D0011F68F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8898A52F211AD13D0011F68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8898A531211AD13D0011F68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB6792E8A127A953CFB638CC /* Pods-DependencyManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DependencyManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-DependencyManager/Pods-DependencyManager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1DA9D054AEF43CF7D00247 /* Pods_DependencyManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26D2D6E17D2A876AE979DB8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				457366C09C2BDC0894CA911D /* Pods-DependencyManager.debug.xcconfig */,
+				BB6792E8A127A953CFB638CC /* Pods-DependencyManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4223A02EE3496C640B0577DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B15767D426353830F23EB12 /* Pods_DependencyManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8898A516211AD13D0011F68F = {
 			isa = PBXGroup;
 			children = (
 				8898A521211AD13D0011F68F /* DependencyManager */,
 				8898A520211AD13D0011F68F /* Products */,
+				26D2D6E17D2A876AE979DB8E /* Pods */,
+				4223A02EE3496C640B0577DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,7 +84,6 @@
 				8898A52C211AD13D0011F68F /* Assets.xcassets */,
 				8898A52E211AD13D0011F68F /* LaunchScreen.storyboard */,
 				8898A531211AD13D0011F68F /* Info.plist */,
-				8898A529211AD13D0011F68F /* DependencyManager.xcdatamodeld */,
 			);
 			path = DependencyManager;
 			sourceTree = "<group>";
@@ -74,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8898A534211AD13D0011F68F /* Build configuration list for PBXNativeTarget "DependencyManager" */;
 			buildPhases = (
+				C4E60EFFEC9E3D4E54F61F51 /* [CP] Check Pods Manifest.lock */,
 				8898A51B211AD13D0011F68F /* Sources */,
 				8898A51C211AD13D0011F68F /* Frameworks */,
 				8898A51D211AD13D0011F68F /* Resources */,
+				4E312CE86D0A849593EF3645 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +156,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E312CE86D0A849593EF3645 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DependencyManager/Pods-DependencyManager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DependencyManager/Pods-DependencyManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4E60EFFEC9E3D4E54F61F51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DependencyManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8898A51B211AD13D0011F68F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8898A525211AD13D0011F68F /* ViewController.swift in Sources */,
-				8898A52B211AD13D0011F68F /* DependencyManager.xcdatamodeld in Sources */,
 				8898A523211AD13D0011F68F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +343,7 @@
 		};
 		8898A535211AD13D0011F68F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 457366C09C2BDC0894CA911D /* Pods-DependencyManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +361,7 @@
 		};
 		8898A536211AD13D0011F68F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB6792E8A127A953CFB638CC /* Pods-DependencyManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,19 +399,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8898A529211AD13D0011F68F /* DependencyManager.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8898A52A211AD13D0011F68F /* DependencyManager.xcdatamodel */,
-			);
-			currentVersion = 8898A52A211AD13D0011F68F /* DependencyManager.xcdatamodel */;
-			path = DependencyManager.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 8898A517211AD13D0011F68F /* Project object */;
 }
